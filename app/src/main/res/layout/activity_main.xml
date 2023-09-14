@@ -7,9 +7,44 @@
     android:padding="25dp"
     android:background="@drawable/background_gradient">    <RelativeLayout android:id="@+id/mainContainer" android:layout_width="match_parent"
     android:layout_height="match_parent" android:visibility="visible">
+    <LinearLayout
+        android:id="@+id/searchBarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <EditText android:id="@+id/city"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:hint="Enter City"
+            android:textColor="@color/white"
+            />
+<!--        <TextView android:id="@+id/updated_at" android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" android:textSize="14dp"-->
+<!--            android:text="20 April 2012, 20:08 PM"/>-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/city"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            />-->
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_margin="25dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#2196F3"
+            android:text="Search" />
+
+    </LinearLayout>
     <LinearLayout android:id="@+id/addressContainer" android:layout_width="match_parent"
         android:layout_height="wrap_content" android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_marginTop="170dp">
         <TextView android:id="@+id/address" android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:textSize="24dp"
             android:text="DHAKA, BD"/>
@@ -109,20 +144,20 @@
                 android:text="06:40 AM"/>
         </LinearLayout>
         <Space android:layout_width="10dp" android:layout_height="wrap_content"/>
-        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
-            android:orientation="vertical" android:layout_weight="1"
-            android:gravity="center" android:padding="8dp"
-            android:background="#3CF1EBF1">
-            <ImageView android:layout_width="25dp" android:layout_height="25dp"
-                android:src="@drawable/info"
-                app:tint="#FFFFFF" />
-            <Space android:layout_width="wrap_content" android:layout_height="5dp"/>
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                android:textSize="12dp" android:text="Created By"/>
-            <TextView android:id="@+id/about" android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:textSize="14dp"
-                android:text="AndroDocs"/>
-        </LinearLayout>
+<!--        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical" android:layout_weight="1"-->
+<!--            android:gravity="center" android:padding="8dp"-->
+<!--            android:background="#3CF1EBF1">-->
+<!--            <ImageView android:layout_width="25dp" android:layout_height="25dp"-->
+<!--                android:src="@drawable/info"-->
+<!--                app:tint="#FFFFFF" />-->
+<!--            <Space android:layout_width="wrap_content" android:layout_height="5dp"/>-->
+<!--            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+<!--                android:textSize="12dp" android:text="Created By"/>-->
+<!--            <TextView android:id="@+id/about" android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content" android:textSize="14dp"-->
+<!--                android:text="AndroDocs"/>-->
+<!--        </LinearLayout>-->
     </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

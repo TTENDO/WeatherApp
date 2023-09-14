@@ -3,5 +3,8 @@
     <style name="Base.Theme.WeatherApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="colorPrimary">#122259</item>
+        <item name="colorPrimaryDark">#29439B</item>
     </style>
 </resources>

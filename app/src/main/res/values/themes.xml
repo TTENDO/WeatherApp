@@ -4,7 +4,15 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="android:textColor">#FFFFFF</item>
+        <item name="colorPrimary">#122259</item>
+        <item name="colorPrimaryDark">#29439B</item>
     </style>
 
+<!--    <style name="MyCustomTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        <item name="colorPrimary">#122259</item>-->
+<!--        <item name="colorPrimaryDark">#29439B</item>-->
+<!--&lt;!&ndash;        <item name="colorAccent">@color/colorAccent</item>&ndash;&gt;-->
+<!--        <item name="android:textColor">#FFFFFF</item>-->
+<!--    </style>-->
     <style name="Theme.WeatherApp" parent="Base.Theme.WeatherApp" />
 </resources>
