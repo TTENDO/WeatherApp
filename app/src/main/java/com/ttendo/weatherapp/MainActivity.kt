@@ -24,8 +24,8 @@ import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
 //    val CITY: String = "dhaka,bd"
-//    val API: String = "1a25e5d9b1906eb373922f8e4e1f9b8b"
-    val apiKey : String = "1a25e5d9b1906eb373922f8e4e1f9b8b"
+//    val API: String = "373922f8e4e1f9b8b1a25e5d9b1906eb"
+    val apiKey : String = "373922f8e4e1f9b8b1a25e5d9b1906eb"
     lateinit var cityName:String
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,7 +42,9 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.search_btn).setOnClickListener{
                 cityName = findViewById<EditText>(R.id.city).text.toString()
-                weatherTask().execute()
+                if(cityName != null){
+                    weatherTask().execute()
+                }
 
 
 //            CoroutineScope(Dispatchers.IO).launch {

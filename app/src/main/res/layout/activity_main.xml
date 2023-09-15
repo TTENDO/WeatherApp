@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:textSize="24dp"
             android:hint="Enter City"
+            android:textColorHint="@color/white"
             android:textColor="@color/white"
             />
 <!--        <TextView android:id="@+id/updated_at" android:layout_width="wrap_content"-->
@@ -38,7 +39,11 @@
             android:layout_margin="25dp"
             android:layout_marginStart="10dp"
             android:backgroundTint="#2196F3"
-            android:text="Search" />
+            android:text="Search"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            />
 
     </LinearLayout>
     <LinearLayout android:id="@+id/addressContainer" android:layout_width="match_parent"
